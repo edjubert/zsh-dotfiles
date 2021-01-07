@@ -1,0 +1,6 @@
+load_zsh_options() {
+  echo "🛠  Loading ZSH options"
+  COMPLETION_WAITING_DOTS="false"
+  ENABLE_CORRECTION="true"
+}
+

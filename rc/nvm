@@ -1,0 +1,15 @@
+# https://medium.com/@dannysmith/little-thing-2-speeding-up-zsh-f1860390f92
+nvm() {
+  if [ -z "$NVM_DIR" ]
+  then
+    echo "🚨 NVM not loaded! Loading now..."
+    unset -f nvm
+
+    export NVM_DIR="/Users/fastory/.nvm"
+
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    
+  else
+    echo "💬 NVM already loaded, skiping this step"
+  fi
+}

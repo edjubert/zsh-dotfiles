@@ -1,0 +1,14 @@
+#******************************************************************************#
+#                                                                              #
+#                            TMUX RESTORE SESSION                              #
+#                                                                              #
+#******************************************************************************#
+
+use_tmux() {
+  WHOAMI=$(whoami)
+  echo "🛠  Loading TMUX session$WHOAMI"
+  if [ "$TMUX" = "" ]; then 
+    tmux new-session -A -s $WHOAMI; 
+  fi
+}
+

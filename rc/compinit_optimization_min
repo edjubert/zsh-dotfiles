@@ -1,0 +1,14 @@
+# Do a compinit optimization at launch
+# Oh My ZSH already load compinit and compaudit
+# No need to call this function unless you deactivated Oh My ZSH
+compinit_optimization_min() {
+  echo "⚡️ Optimizing Compinit startup"
+  autoload -Uz compinit
+
+  for dump in ~/.zcompdump(N.mh+24); do
+    compinit
+  done
+
+  compinit -C
+}
+

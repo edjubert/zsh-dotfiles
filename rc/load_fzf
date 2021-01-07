@@ -1,0 +1,9 @@
+load_fzf() {
+  echo "🛠  Loading FZF"
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+  export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,.volumes/*,.idea/*,.github/*,.vscode/*}"'
+  export FZF_DEFAULT_OPTS="--extended --cycle --multi --reverse --preview 'bat --style=numbers --color=always {}' --preview-window=up:50%"
+  export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+  export FZF_CTRL_T_OPTS='--extended --cycle --reverse --multi --height=90% --preview "bat --style=numbers --color=always {}" --preview-window=right:50%'
+}
+

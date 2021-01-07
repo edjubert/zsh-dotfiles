@@ -1,0 +1,38 @@
+#******************************************************************************#
+#                                                                              #
+#                                    ALIASES                                   #
+#                                                                              #
+#******************************************************************************#
+
+load_aliases() {
+  echo "🛠  Loading aliases"
+  APP_FOLDER="/Applications"
+  BROWSER="$APP_FOLDER/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+  alias gccFlags="gcc -Wall -Wextra -Werror"
+
+  # TODO: move these to .gitrc
+  echo "⚠️  REMINDER: move your git aliases to .gitrc"
+  alias ga="git add -p "
+  alias gg="git grep "
+  alias gs="git status"
+  alias checkout="git checkout "
+  alias commit="git commit "
+  alias wip="git add . && git commit -m ':construction: To squash or not to squash?' --no-verify"
+
+  [ -f /Users/fastory/.nvm/versions/node/v12.16.1/bin/qrcode-terminal ] && alias qr="qrcode-terminal "
+  [ -f ~/goodenough ] && alias goodenough="~/goodenough"
+  [ -f /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron ] && alias code='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
+  alias vim="nvim"
+
+  alias chrome="$BROWSER "
+  alias github="$BROWSER github.com"
+  alias prod="$BROWSER app.fastory.io"
+
+  alias please="sudo"
+
+  QMK_FOLDER="/Users/fastory/qmk_firmeware_new"
+  QMK_HEX_FOLDER="/Users/fastory/QMK_Hex_files"
+  alias rkc="cd $QMK_FOLDER && mv -v redox_rev1_edjubert.hex $QMK_HEX_FOLDER/edjubert_$(cd ~/qmk_firmeware_new/keyboards/redox/keymaps/edjubert && git branch --show-current)_$(date '+%Y%m%d%H%M').hex"
+}
+

@@ -1,0 +1,48 @@
+#******************************************************************************#
+#                                                                              #
+#                              POWERLEVEL9K CONFIG                             #
+#                                                                              #
+#******************************************************************************#
+
+powerlevel9k_config() {
+  echo "🛠  Loading Powerlevel 9k"
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery history dir vcs root_indicator status)
+  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs)
+  POWERLEVEL9K_DATE_FORMAT=%D{%d.%m.%Y}
+  POWERLEVEL9K_DIR_PATH_ABSOLUTE=true
+  POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+  POWERLEVEL9K_SHORTEN_STRATEGY="none"
+  POWERLEVEL9K_BATTERY_STAGES="▁▂▃▄▅▆▇█"
+  POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(
+	  red1
+	  orangered1
+	  darkorange
+	  orange1
+	  gold1
+	  yellow1
+	  yellow2
+	 
+	  greenyellow
+	  chartreuse1
+	  chartreuse2
+	  green1
+  )
+ # POWERLEVEL9K_BATTERY_STAGES=(
+ # 	 $'\u2581 '
+ # 	 $'\u2582 '
+ # 	 $'\u2583 '
+ # 	 $'\u2584 '
+ # 	 $'\u2585 '
+ # 	 $'\u2586 '
+ # 	 $'\u2587 '
+ # 	 $'\u2588 '
+ #  )
+ # POWERLEVEL9K_BATTERY_STAGES=(
+ #    $'▏    ▏' $'▎    ▏' $'▍    ▏' $'▌    ▏' $'▋    ▏' $'▊    ▏' $'▉    ▏' $'█    ▏'
+ #    $'█▏   ▏' $'█▎   ▏' $'█▍   ▏' $'█▌   ▏' $'█▋   ▏' $'█▊   ▏' $'█▉   ▏' $'██   ▏'
+ #    $'██   ▏' $'██▎  ▏' $'██▍  ▏' $'██▌  ▏' $'██▋  ▏' $'██▊  ▏' $'██▉  ▏' $'███  ▏'
+ #    $'███  ▏' $'███▎ ▏' $'███▍ ▏' $'███▌ ▏' $'███▋ ▏' $'███▊ ▏' $'███▉ ▏' $'████ ▏'
+ #    $'████ ▏' $'████▎▏' $'████▍▏' $'████▌▏' $'████▋▏' $'████▊▏' $'████▉▏' $'█████▏' )
+}
+
+

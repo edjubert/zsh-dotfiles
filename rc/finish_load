@@ -1,0 +1,6 @@
+finish_load() {
+  clear
+  echo "👌 All setup, enjoy 👌"
+  sleep 1
+  clear
+}

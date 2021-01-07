@@ -1,0 +1,9 @@
+  load_ohmyzsh() {
+  echo "🛠  Loading Oh My ZSH"
+  export ZSH="/Users/fastory/.oh-my-zsh"
+
+  ZSH_THEME="lambda-mod"
+  echo "💬 Theme -> $ZSH_THEME"
+  source $ZSH/oh-my-zsh.sh
+}
+

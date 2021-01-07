@@ -1,0 +1,13 @@
+#******************************************************************************#
+#                                                                              #
+#                               HOMEBREW 42 FIX                                #
+#                                                                              #
+#******************************************************************************#
+
+# Load Homebrew config script
+homebrew_42_fix() {
+  echo "🚑 Patching Homebrew for 42"
+  source $HOME/.brewconfig.zsh
+  export VAGRANT_HOME=/Volumes/Storage/goinfre/edjubert/vagrant
+}
+

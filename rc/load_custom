@@ -1,0 +1,8 @@
+load_custom() {
+  echo "🛠  Loading kp, cani, fp and ks"
+  fpath=(~/zsh_config/scripts "${fpath[@]}")
+
+  autoload -Uz kp cani fp ks
+
+  typeset -U PATH fpath
+}
