@@ -6,7 +6,7 @@
 #    By: edjubert <edjubert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/08 10:05:24 by edjubert          #+#    #+#              #
-#    Updated: 2021/01/07 12:29:41 by fastory          ###   ########.fr        #
+#    Updated: 2021/01/07 12:32:21 by fastory          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 
 ZSH_CONFIG="/Users/fastory/zsh_config"
 ZSH_RC="$ZSH_CONFIG/rc"
-ZSH_THEME="$ZSH_CONFIG/themes"
+
 source "$ZSH_RC/powerlevel9k"
 source "$ZSH_RC/nvm"
 source "$ZSH_RC/compinit_optimization_min"
