@@ -6,7 +6,7 @@
 #    By: edjubert <edjubert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/08 10:05:24 by edjubert          #+#    #+#              #
-#    Updated: 2021/01/07 12:32:21 by fastory          ###   ########.fr        #
+#    Updated: 2021/01/07 12:50:40 by fastory          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 # zmodload zsh/zprof
 
 
-ZSH_CONFIG="/Users/fastory/zsh_config"
+ZSH_CONFIG="$HOME/zsh-dotfiles"
 ZSH_RC="$ZSH_CONFIG/rc"
 
 source "$ZSH_RC/powerlevel9k"
@@ -39,7 +39,7 @@ bindkey_options
 load_custom
 load_fzf
 load_aliases
-nvm
+nvm --version
 
 # This is just a confirmation messaege that all went well
 finish_load
