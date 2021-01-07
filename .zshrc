@@ -3,16 +3,18 @@
 #                                                         :::      ::::::::    #
 #    .zshrc                                             :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: edjubert <edjubert@student.42.fr>          +#+  +:+       +#+         #
+#    By: edjubert <edouard.jubert@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/03/08 10:05:24 by edjubert          #+#    #+#              #
-#    Updated: 2021/01/07 12:50:40 by fastory          ###   ########.fr        #
+#    Created: 2021/01/07 13:00:29 by edjubert          #+#    #+#              #
+#    Updated: 2021/01/07 13:00:31 by edjubert         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Uncomment this line and the last to debug ZSH
 # zmodload zsh/zprof
 
+export SESSION_USER="edjubert"
+export SESSION_MAIL="edouard.jubert@gmail.com"
 
 ZSH_CONFIG="$HOME/zsh-dotfiles"
 ZSH_RC="$ZSH_CONFIG/rc"

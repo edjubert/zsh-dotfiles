@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    load_zsh_options                                   :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: edjubert <edouard.jubert@gmail.com>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/01/07 13:01:47 by edjubert          #+#    #+#              #
+#    Updated: 2021/01/07 13:01:48 by edjubert         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 load_zsh_options() {
   echo "🛠  Loading ZSH options"
   COMPLETION_WAITING_DOTS="false"
