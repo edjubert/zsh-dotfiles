@@ -1,0 +1,3 @@
+[submodule "themes/0i0.zsh-theme"]
+	path = themes/0i0.zsh-theme
+	url = https://github.com/0i0/0i0.zsh-theme.git
