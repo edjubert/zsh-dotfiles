@@ -6,7 +6,7 @@
 #    By: edjubert <edouard.jubert@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/07 13:01:07 by edjubert          #+#    #+#              #
-#    Updated: 2021/01/07 13:01:08 by edjubert         ###   ########.fr        #
+#    Updated: 2021/01/20 15:28:12 by edjubert         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ load_aliases() {
 
   # TODO: move these to .gitrc
   echo "⚠️  REMINDER: move your git aliases to .gitrc"
+  alias lg="lazygit"
   alias ga="git add -p "
   alias gg="git grep "
   alias gs="git status"
